@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <!-- <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title> -->
+    <title>Health Predict</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119386393-1');
+    </script>
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="pre-loader-box">
+            <!-- <div class="loader-logo"><img src="vendors/images/deskapp-logo.svg" alt=""></div> -->
+            <div class='loader-progress' id="progress_div">
+                <div class='bar' id='bar1'></div>
+            </div>
+            <div class='percent' id='percent1'>0%</div>
+            <div class="loading-text">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <!-- header start -->
+    <div class="header">
+        <div class="header-left">
+            <h5 class="user-name ml-3">Ekwere Precious Dashboard</h5>
+        </div>
+        <div class="header-right">
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+							<img src="vendors/images/photo1.jpg" alt="">
+						</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header Stop -->
+
+    <!--Right sidebar start -->
+    <!-- Right sidebar end -->
+
+    <!-- Left Sidebar start -->
+    <div class="left-side-bar">
+        <div class="brand-logo">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="vendors/images/logo-icon.png" alt="Health Predict" style="margin: 20px;">
+                <h3 class="text-white">Health Predict</h3>
+            </a>
+            <div class="close-sidebar" data-toggle="left-sidebar-close">
+                <i class="ion-close-round"></i>
+            </div>
+        </div>
+        <div class="menu-block customscroll">
+            <div class="sidebar-menu">
+                <ul id="accordion-menu">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="test_history.html">Tests History</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <!-- Left sidebar end -->
+
+    <!-- Main Content start -->
+    <div class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="title">
+                            <h4></h4>
+                        </div>
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Test Description</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 mb-30">
+                    <div class="card card-box" style="margin:auto; width: 60%;">
+                        <img class="card-img-top" src="vendors/images/img2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title weight-500">Test 1</h5>
+                            <p class="card-text">
+                                Make a video of you walking round a circle, Stay 6 Feet away from the camera. Click start to make a Preview and Capture Movement.
+                            </p>
+                            <a href="preview_recording.html" class="btn btn-primary btn-lg">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer start -->
+            <div class="footer-wrap pd-20 mb-20 card-box">
+                &copy; Health Predict
+            </div>
+            <!-- footer end -->
+        </div>
+    </div>
+    </div>
+    <!-- Main Content end -->
+
+    <!-- js -->
+    <script src="vendors/scripts/core.js"></script>
+    <script src="vendors/scripts/script.min.js"></script>
+    <script src="vendors/scripts/process.js"></script>
+    <script src="vendors/scripts/layout-settings.js"></script>
+    <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <!-- buttons for Export datatable -->
+    <script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.print.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
+    <script src="src/plugins/datatables/js/pdfmake.min.js"></script>
+    <script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- Datatable Setting js -->
+    <script src="vendors/scripts/datatable-setting.js"></script>
+</body>
+<script src="src/scripts/content-include.js"></script>
+<script>
+    includeHTML();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <!-- <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title> -->
+    <title>Health Predict</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119386393-1');
+    </script>
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="pre-loader-box">
+            <!-- <div class="loader-logo"><img src="vendors/images/deskapp-logo.svg" alt=""></div> -->
+            <div class='loader-progress' id="progress_div">
+                <div class='bar' id='bar1'></div>
+            </div>
+            <div class='percent' id='percent1'>0%</div>
+            <div class="loading-text">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+    <!-- header start -->
+    <div class="header">
+        <div class="header-left">
+            <h5 class="user-name ml-3">Ekwere Precious Dashboard</h5>
+        </div>
+        <div class="header-right">
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+							<img src="vendors/images/photo1.jpg" alt="">
+						</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header Stop -->
+
+    <!--Right sidebar start -->
+    <!-- Right sidebar end -->
+
+    <!-- Left Sidebar start -->
+    <div class="left-side-bar">
+        <div class="brand-logo">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="vendors/images/logo-icon.png" alt="Health Predict" style="margin: 20px;">
+                <h3 class="text-white">Health Predict</h3>
+            </a>
+            <div class="close-sidebar" data-toggle="left-sidebar-close">
+                <i class="ion-close-round"></i>
+            </div>
+        </div>
+        <div class="menu-block customscroll">
+            <div class="sidebar-menu">
+                <ul id="accordion-menu">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="test_history.html">Tests History</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <!-- Left sidebar end -->
+
+    <!-- Main Content start -->
+    <div class="main-container">
+        <div class="pd-ltr-20 xs-pd-20-10">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="title">
+                            <h4></h4>
+                        </div>
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Preview Recording</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <main>
+                <div class="card-box pd-20 height-100-p mb-30">
+                    <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> This is Preview Recording, Click Next and go to main Recording</div>
+                    <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> Please accept permissions to use voice commands and camera </div>
+                    <div class="col-md-6">
+                        <h5 class="card-title weight-500">Test 1</h5>
+                        <p class="card-text">Make a video of you walking round a circle, Stay 6 Feet away from the camera.</p>
+                        <p class="card-text">Do this by Clicking the button or use a voice command<i class="text-info"> Start Recording</i> to start and <i class="text-info">End Recording</i> to end.</p>
+                        <br>
+                        <button type="button" class="btn btn-primary" id="btnStart">Start Recording</button>
+                        <button type="button" class="btn btn-primary" id="btnStop">Stop Recording</button>
+                    </div>
+                </div>
+
+                <div class="card-box pd-20 height-100-p mb-30">
+                    <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Live Recording <br>PS: Scroll Down to view Saved Record After Stoping Recording</div>
+                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                        <video controls style="overflow: scroll;"></video>
+                    </div>
+                </div>
+                <div class="card-box pd-20 height-100-p mb-30">
+                    <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Saved Recording. <br> To download Click on this icon <i class="fa fa-ellipsis-v fa-lg"></i></div>
+                    <div class="row col-lg-12 col-md-6 col-sm-3">
+                        <video id="vid2" controls style="overflow: scroll;"></video>
+                    </div>
+                    <br>
+                    <br>
+                    <a href="main_recording.html"><button type="button" class="btn btn-primary btn-lg" style="width: 150px;">Next</button></a>
+                </div>
+
+
+                <!-- could save to canvas and do image manipulation and saving too -->
+            </main>
+
+            <!-- footer start -->
+            <div class="footer-wrap pd-20 mb-20 card-box">
+                &copy; Health Predict
+            </div>
+            <!-- footer end -->
+        </div>
+    </div>
+    </div>
+    <!-- Main Content end -->
+
+    <!-- js -->
+    <script src="vendors/scripts/core.js"></script>
+    <script src="vendors/scripts/script.min.js"></script>
+    <script src="vendors/scripts/process.js"></script>
+    <script src="vendors/scripts/layout-settings.js"></script>
+    <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <!-- buttons for Export datatable -->
+    <script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.print.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
+    <script src="src/plugins/datatables/js/pdfmake.min.js"></script>
+    <script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- Datatable Setting js -->
+    <script src="vendors/scripts/datatable-setting.js"></script>
+
+    <!-- Recording Script -->
+    <script>
+        let constraintObj = {
+            audio: false,
+            video: {
+                facingMode: "user",
+                width: {
+                    min: 640,
+                    ideal: 1280,
+                    max: 1920
+                },
+                height: {
+                    min: 480,
+                    ideal: 720,
+                    max: 1080
+                }
+            }
+        };
+        // width: 1280, height: 720  -- preference only
+        // facingMode: {exact: "user"}
+        // facingMode: "environment"
+
+        //handle older browsers that might implement getUserMedia in some way
+        if (navigator.mediaDevices === undefined) {
+            navigator.mediaDevices = {};
+            navigator.mediaDevices.getUserMedia = function(constraintObj) {
+                let getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+                if (!getUserMedia) {
+                    return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
+                }
+                return new Promise(function(resolve, reject) {
+                    getUserMedia.call(navigator, constraintObj, resolve, reject);
+                });
+            }
+        } else {
+            navigator.mediaDevices.enumerateDevices()
+                .then(devices => {
+                    devices.forEach(device => {
+                        console.log(device.kind.toUpperCase(), device.label);
+                        //, device.deviceId
+                    })
+                })
+                .catch(err => {
+                    console.log(err.name, err.message);
+                })
+        }
+
+        navigator.mediaDevices.getUserMedia(constraintObj)
+            .then(function(mediaStreamObj) {
+                //connect the media stream to the first video element
+                let video = document.querySelector('video');
+                if ("srcObject" in video) {
+                    video.srcObject = mediaStreamObj;
+                } else {
+                    //old version
+                    video.src = window.URL.createObjectURL(mediaStreamObj);
+                }
+
+                video.onloadedmetadata = function(ev) {
+                    //show in the video element what is being captured by the webcam
+                    video.play();
+                };
+
+                //add listeners for saving video/audio
+                let start = document.getElementById('btnStart');
+                let stop = document.getElementById('btnStop');
+                let vidSave = document.getElementById('vid2');
+                let mediaRecorder = new MediaRecorder(mediaStreamObj);
+                let chunks = [];
+
+                //Speech Recognition to call start and end record on video 
+                window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+                const recognition = new window.SpeechRecognition();
+                recognition.interimResults = true;
+                recognition.lang = "en-US";
+
+                recognition.addEventListener('result', (e) => {
+
+                    const text = Array.from(e.results)
+                        .map(result => result[0])
+                        .map(result => result.transcript)
+                        .join('')
+
+                    console.log("text: " + text);
+
+                    if (text.includes("start recording")) {
+
+                        mediaRecorder.start();
+                        console.log(mediaRecorder.state);
+
+                    }
+
+                    if (text.includes("stop recording")) {
+
+                        mediaRecorder.stop();
+                        console.log(mediaRecorder.state);
+
+
+                    }
+                });
+
+                start.addEventListener('click', (ev) => {
+                    mediaRecorder.start();
+                    console.log(mediaRecorder.state);
+                });
+                stop.addEventListener('click', (ev) => {
+                    mediaRecorder.stop();
+                    console.log(mediaRecorder.state);
+                });
+
+
+                recognition.addEventListener('end', recognition.start);
+
+                recognition.start();
+
+                mediaRecorder.ondataavailable = function(ev) {
+                    chunks.push(ev.data);
+                }
+
+                mediaRecorder.onstop = (ev) => {
+                    let blob = new Blob(chunks, {
+                        'type': 'video/mp4;'
+                    });
+                    chunks = [];
+                    let videoURL = window.URL.createObjectURL(blob);
+                    vidSave.src = videoURL;
+                }
+            })
+
+        .catch(function(err) {
+            console.log(err.name, err.message);
+        });
+
+        /*********************************
+        getUserMedia returns a Promise
+        resolve - returns a MediaStream Object
+        reject returns one of the following errors
+        AbortError - generic unknown cause
+        NotAllowedError (SecurityError) - user rejected permissions
+        NotFoundError - missing media track
+        NotReadableError - user permissions given but hardware/OS error
+        OverconstrainedError - constraint video settings preventing
+        TypeError - audio: false, video: false
+        *********************************/
+    </script>
+</body>
+<script src="src/scripts/content-include.js"></script>
+<script>
+    includeHTML();
+</script>
+</body>
+
+</html>
