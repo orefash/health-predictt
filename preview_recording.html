@@ -118,6 +118,9 @@
 
                 <div class="card-box pd-20 height-100-p mb-30">
                     <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Live Recording <br>PS: Scroll Down to view Saved Record After Stoping Recording</div>
+                    
+                    <div class="alert alert-info text-uppercase" style="display: none;" id="errorid"><i class="icon-copy fa fa-info-circle fa-lg"></i> Recording</div>
+                    
                     <div class="row col-lg-12 col-md-12 col-sm-12">
                         <video controls style="overflow: scroll;"></video>
                     </div>
@@ -255,6 +258,11 @@
                     if (text.includes("start recording")) {
 
                         mediaRecorder.start();
+                       
+                        error = "Recording Started!!!";
+                        document.getElementById("errorid").style.display = "block";
+                        document.getElementById("errorid").innerHTML = error;
+   
                         console.log(mediaRecorder.state);
 
                     }
@@ -262,6 +270,11 @@
                     if (text.includes("stop recording")) {
 
                         mediaRecorder.stop();
+
+                        error = "Recording Stopped!!!";
+                        document.getElementById("errorid").style.display = "block";
+                        document.getElementById("errorid").innerHTML = error;
+
                         console.log(mediaRecorder.state);
 
 
@@ -270,10 +283,16 @@
 
                 start.addEventListener('click', (ev) => {
                     mediaRecorder.start();
+                    error = "Recording Started!!!";
+                    document.getElementById("errorid").style.display = "block";
+                    document.getElementById("errorid").innerHTML = error;
                     console.log(mediaRecorder.state);
                 });
                 stop.addEventListener('click', (ev) => {
                     mediaRecorder.stop();
+                    error = "Recording Stopped!!!";
+                    document.getElementById("errorid").style.display = "block";
+                    document.getElementById("errorid").innerHTML = error;
                     console.log(mediaRecorder.state);
                 });
 
@@ -313,10 +332,6 @@
         *********************************/
     </script>
 </body>
-<script src="src/scripts/content-include.js"></script>
-<script>
-    includeHTML();
-</script>
 </body>
 
 </html>
