@@ -21,6 +21,13 @@
     <link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
     <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+    <!-- switchery css -->
+	<link rel="stylesheet" type="text/css" href="src/plugins/switchery/switchery.min.css">
     <style>
         * {
             margin: 0;
@@ -74,7 +81,7 @@
     <!-- header start -->
     <div class="header">
         <div class="header-left">
-            <h5 class="user-name ml-3">Ekwere Precious Dashboard</h5>
+            <h5 class="user-name ml-3">Dashboard</h5>
         </div>
         <div class="header-right">
             <div class="user-info-dropdown">
@@ -98,54 +105,12 @@
     <!-- Right sidebar end -->
 
     <!-- Left Sidebar start -->
-    <div class="left-side-bar">
-        <div class="brand-logo">
-            <!-- Logo -->
-            <a href="index.html">
-                <img src="vendors/images/logo-icon.png" alt="Health Predict" style="margin: 20px;">
-                <h3 class="text-white">Health Predict</h3>
-            </a>
-            <div class="close-sidebar" data-toggle="left-sidebar-close">
-                <i class="ion-close-round"></i>
-            </div>
-        </div>
-        <div class="menu-block customscroll">
-            <div class="sidebar-menu">
-                <ul id="accordion-menu">
-                    <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li><a href="test_history.html">Tests History</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="mobile-menu-overlay"></div>
+	<div class="mobile-menu-overlay"></div>
     <!-- Left sidebar end -->
 
     <!-- Main Content start -->
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
-            <div class="page-header">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="title">
-                            <h4></h4>
-                        </div>
-                        <nav aria-label="breadcrumb" role="navigation">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
             <div class="card-box pd-20 height-100-p mb-30">
                 <div class="row align-items-center">
                     <div class="col-md-4">
@@ -163,31 +128,46 @@
                 </div>
             </div>
 
-            <div class="card-box pd-20 height-100-p mb-30">
-                <div class="row" style="margin: 50px;">
-                    <div class="col-lg-12">
-                        <center>
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 1</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 2</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 3</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 4</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 5</a>
-
-                            <a href="test_description.html" class="btn btn-primary btn-lg mr-2 col-md-2" style="margin:10px;">Test 6</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg disabled mr-2 col-md-2" style="margin:10px;">Test 7</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg disabled mr-2 col-md-2" style="margin:10px;">Test 8</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg disabled mr-2 col-md-2" style="margin:10px;">Test 9</a>
-                            <a href="test_description.html" class="btn btn-primary btn-lg disabled mr-2 col-md-2" style="margin:10px;">Test 10</a>
-                        </center>
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <h4 class="text-blue h4">Movements</h4>
+                        <p class="mb-30">Select Movement for tests.</p>
                     </div>
                 </div>
+                <form action="test_description.html" method="POST">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                                    <optgroup label="Select Movements">
+                                        <option value="Movement 1">Movement 1</option>
+                                        <option value="Movement 2">Movement 2</option>
+                                        <option value="Movement 3">Movement 3</option>
+                                        <option value="Movement 4">Movement 4</option>
+                                        <option value="Movement 5">Movement 5</option>
+                                        <option value="Movement 6">Movement 6</option>
+                                        <option value="Movement 7">Movement 7</option>
+                                        <option value="Movement 8">Movement 8</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                               <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
+            <!-- Select-2 end -->
 
             <!-- Simple Datatable start -->
             <div class="card-box mb-30">
                 <div class="pd-20">
                     <h4 class="text-blue h4">Test History</h4>
-                    <p class="mb-0">Last Four Tests</p>
+                    <p class="mb-0">View all History</p>
                 </div>
                 <div class="pb-20">
                     <table class="data-table table stripe hover nowrap">
@@ -291,6 +271,22 @@
     <script src="vendors/scripts/script.min.js"></script>
     <script src="vendors/scripts/process.js"></script>
     <script src="vendors/scripts/layout-settings.js"></script>
+    <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <!-- buttons for Export datatable -->
+    <script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.print.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
+    <script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
+    <script src="src/plugins/datatables/js/pdfmake.min.js"></script>
+    <script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- switchery js -->
+	<script src="src/plugins/switchery/switchery.min.js"></script>
+    <!-- Datatable Setting js -->
+    <script src="vendors/scripts/datatable-setting.js"></script>
     <script src="src/scripts/content-include.js"></script>
     <script>
         includeHTML();
