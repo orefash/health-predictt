@@ -23,7 +23,20 @@
     <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
+    <style>
+        .pagehead{
+            width: 100%;
+            min-width: 1000px;
+        }
 
+        .containerx {
+            padding-top: 100px;
+        }
+
+        .header{
+            z-index: 9 !important;
+        }
+    </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -40,28 +53,17 @@
 </head>
 
 <body>
-    <div class="pre-loader">
-        <div class="pre-loader-box">
-            <!-- <div class="loader-logo"><img src="vendors/images/deskapp-logo.svg" alt=""></div> -->
-            <div class='loader-progress' id="progress_div">
-                <div class='bar' id='bar1'></div>
-            </div>
-            <div class='percent' id='percent1'>0%</div>
-            <div class="loading-text">
-                Loading...
-            </div>
-        </div>
-    </div>
+  
 
     <!-- header start -->
-    <div class="header">
+    <div class="header pagehead">
         <div class="header-left">
             <h5 class="user-name ml-3">Ekwere Precious Dashboard</h5>
         </div>
         <div class="header-right">
             <div class="user-info-dropdown">
                 <div class="dropdown">
-                    <a class="dropdown-item" href="login.html"  style="margin-top: 5px;"><i class="dw dw-logout"></i> Log Out</a>
+                     <a class="dropdown-item" href="login.html"  style="margin-top: 5px;"><i class="dw dw-logout"></i> Log Out</a>
                 </div>
             </div>
 
@@ -77,24 +79,9 @@
     <!-- Left sidebar end -->
 
     <!-- Main Content start -->
-    <div class="main-container">
+    <div class="containerx">
         <div class="pd-ltr-20 xs-pd-20-10">
-            <div class="page-header">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="title">
-                            <h4></h4>
-                        </div>
-                        <nav aria-label="breadcrumb" role="navigation">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Main Recording</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
+           
             <main>
                 <div class="card-box pd-20 height-100-p mb-30">
                     <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg" aria-hidden="true"></i> This is a Main Recording Test</div>
@@ -125,6 +112,8 @@
                     </div>
                     <br>
                     <br>
+                    <a href="preview_recording.html"><button type="button" class="btn btn-danger btn-lg">Cancel</button></a>
+                   
                     <a href="index.html"><button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Take Another Test</button></a>
                 </div>
 
@@ -132,11 +121,7 @@
                 <!-- could save to canvas and do image manipulation and saving too -->
             </main>
 
-            <!-- footer start -->
-            <div class="footer-wrap pd-20 mb-20 card-box">
-                &copy; Health Predict
-            </div>
-            <!-- footer end -->
+        
         </div>
     </div>
     </div>
