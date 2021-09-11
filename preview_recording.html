@@ -56,7 +56,7 @@
 
 
     <!-- header start -->
-    <div class="header pagehead">
+    <!-- <div class="header pagehead">
         <div class="header-left">
             <h5 class="user-name ml-3">Ekwere Precious Dashboard</h5>
         </div>
@@ -68,14 +68,14 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
     <!-- Header Stop -->
 
     <!--Right sidebar start -->
     <!-- Right sidebar end -->
 
     <!-- Left Sidebar start -->
-    <div class="mobile-menu-overlay"></div>
+    <!-- <div class="mobile-menu-overlay"></div> -->
     <!-- Left sidebar end -->
 
     <!-- Main Content start -->
@@ -85,30 +85,30 @@
 
             <main>
                 <div class="card-box pd-20 height-100-p mb-30">
-                    <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> This is Preview Recording, Click Next and go to main Recording</div>
-                    <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> Please accept permissions to use voice commands and camera </div>
+                    <!-- <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> This is Preview Recording, Click Next and go to main Recording</div>
+                    <div class="alert alert-warning text-uppercase"><i class="icon-copy fa fa-warning" aria-hidden="true"></i> Please accept permissions to use voice commands and camera </div> -->
                     <div class="col-md-6">
                         <h5 class="card-title weight-500">Test 1</h5>
                         <p class="card-text">Make a video of you walking round a circle, Stay 6 Feet away from the camera.</p>
                         <p class="card-text">Do this by Clicking the button or use a voice command<i class="text-info"> Start Recording</i> to start and <i class="text-info">End Recording</i> to end.</p>
                         <br>
-                        <button type="button" class="btn btn-primary" id="btnStart">Start Recording</button>
-                        <button type="button" class="btn btn-primary" id="btnStop">Stop Recording</button>
+                        <button type="button" class="btn btn-success" id="btnStart">Start Recording</button>
+                        <button type="button" class="btn btn-danger" id="btnStop">Stop Recording</button>
                     </div>
                 </div>
 
                 <div class="card-box pd-20 height-100-p mb-30">
-                    <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Live Recording <br>PS: Scroll Down to view Saved Record After Stoping Recording</div>
+                    <!-- <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Live Recording <br>PS: Scroll Down to view Saved Record After Stoping Recording</div> -->
                     
                     <div class="alert alert-info text-uppercase" style="display: none;" id="errorid"><i class="icon-copy fa fa-info-circle fa-lg"></i> Recording</div>
                     
-                    <div class="row col-lg-12 col-md-12 col-sm-12">
+                    <div class="row col-lg-12 col-md-12 col-sm-12 offset-md-2">
                         <video controls style="overflow: scroll;"></video>
                     </div>
                 </div>
                 <div class="card-box pd-20 height-100-p mb-30">
-                    <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Saved Recording. <br> To download Click on this icon <i class="fa fa-ellipsis-v fa-lg"></i></div>
-                    <div class="row col-lg-12 col-md-6 col-sm-3">
+                    <!-- <div class="alert alert-info text-uppercase"><i class="icon-copy fa fa-info-circle fa-lg"></i> Saved Recording. <br> To download Click on this icon <i class="fa fa-ellipsis-v fa-lg"></i></div> -->
+                    <div class=" col-md-8 offset-md-2" >
                         <video id="vid2" controls style="overflow: scroll;"></video>
                     </div>
                     <br>
@@ -133,20 +133,6 @@
     <script src="vendors/scripts/script.min.js"></script>
     <script src="vendors/scripts/process.js"></script>
     <script src="vendors/scripts/layout-settings.js"></script>
-    <script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-    <script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
-    <!-- buttons for Export datatable -->
-    <script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
-    <script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
-    <script src="src/plugins/datatables/js/buttons.print.min.js"></script>
-    <script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
-    <script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
-    <script src="src/plugins/datatables/js/pdfmake.min.js"></script>
-    <script src="src/plugins/datatables/js/vfs_fonts.js"></script>
-    <!-- Datatable Setting js -->
-    <script src="vendors/scripts/datatable-setting.js"></script>
 
     <!-- Recording Script -->
     <script>
