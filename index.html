@@ -106,14 +106,20 @@
             <div class="pd-20 card-box mb-30">
                 <div class="clearfix">
                     <div class="pull-left">
-                        <h4 class="text-blue h4">Movements</h4>
-                        <p class="mb-30">Select Movement for tests.</p>
+                        <!-- <h4 class="text-blue h4">Movements</h4> -->
+                        <p class="mb-30">Enter your information below to begin tests </p>
                     </div>
                 </div>
                 <form action="/preview_recording.html" >
                     <div class="row">
                         <div class="col-md-10">
                             <div class="form-group">
+                                <label for="Email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                             </div>
+                            <div class="form-group">
+                                
+                                <label for="movement" class="form-label">Select Movement for Test</label>
                                 <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
                                     <optgroup label="Select Movements">
                                         <option value="Movement 1">Movement 1</option>
@@ -127,11 +133,13 @@
                                     </optgroup>
                                 </select>
                             </div>
-                        </div>
-                        <div class="col-md-2">
                             <div class="form-group">
-                               <button type="submit" class="btn btn-primary btn-lg">Continue</button>
-                            </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+                             </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            
                         </div>
                     </div>
                 </form>
